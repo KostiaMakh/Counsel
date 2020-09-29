@@ -2,7 +2,13 @@
 @import "bootstrap.css";
 @import "bootstrap-grid.css";
 @import "bootstrap-reboot.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+
+h3, h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
 header {
   height: 200px;
   padding-top: 50px;
@@ -10,10 +16,21 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
+    .navbar-toggler{
+      border-color: white !important;}
+    i{
+      color: white;
+      font-size: 24px;
+    }
   .nav-item {
     margin-left: 42px;
     a{
-    color: white !important;}
+      color: white !important;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    &:hover{
+      color: #fde52c !important;
+    }}
     @media screen and (max-width: 450px){
       margin-left: 10px;
     }  }
@@ -23,22 +40,32 @@ header {
         margin-right: 4px;
       }
     }
+.language{
+  a{
+    display: inline-block;
+  }
+  img{
+    display: inline-block;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px;
+  }
 }
+  .dropdown-menu{
+    a{
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }}
+
 .first_screen{
   width: 100%;
   overflow: hidden;
   position: relative;
   height: 100vh;
   z-index: 1;
-  .BG{
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    img{
-      height: 100%;
-    }
-  }}
+  background-image: url("../Images/main_bg.jpg");}
 .second_screen{
   position: relative;
   .item{
@@ -62,6 +89,10 @@ header {
       line-height: 31px;
       color: #666666;
       margin-bottom: 25px;
+      @media screen and (max-width: 570px){
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
     p{
       font-size: 16px;
@@ -112,8 +143,8 @@ header {
     }
     .photo{
       position: relative;
-      height: 320px;
       width: 100%;
+      height: 320px;
       background-color: #a1a1a1;
       z-index: 3 !important;
     }
@@ -126,13 +157,12 @@ header {
     position: relative;
     .photo{
       position: relative;
-      height: 320px;
       width: 100%;
     }}
   .item{
     padding-top: 100px;
     padding-bottom: 100px;
-    @media screen and (max-width: 570px){
+    @media screen and (max-width: 800px){
       padding-top: 20px;
       padding-bottom: 20px;
     }
@@ -150,6 +180,10 @@ header {
       line-height: 31px;
       color: #666666;
       margin-bottom: 25px;
+      @media screen and (max-width: 570px){
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
     p{
       font-size: 16px;
@@ -185,11 +219,15 @@ header {
   }
 .contact_us{
   background-color: #002e5b;
-  padding: 25px 15px;
+  padding: 25px 0;
   p{
     font-size: 21px;
     color: white;
     margin-bottom: 0;
+    @media screen and (max-width: 450px){
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
   }
   a{
     padding: 17px;
@@ -204,14 +242,21 @@ header {
     text-align: center;
     &:hover{
       transition: 0.5s;
-      background-color: #77e156;
+      background-color: #e81018;
       transform: scale(1.1)
+    }
+    @media screen and (max-width: 450px){
+      font-size: 12px;
+      padding: 12px;
     }
   }
 }
 .popular_services{
   padding-top: 100px;
   padding-bottom: 100px;
+  @media screen and (max-width: 800px){
+    padding: 50px 0;
+  }
   h2{
     font-size: 25px;
     text-transform: uppercase;
@@ -256,6 +301,9 @@ header {
   background-color: #002e5b;
   padding-top: 140px;
   padding-bottom: 140px;
+  @media screen and (max-width: 800px){
+    padding: 50px 0;
+  }
   span{
     display: block;
     margin-bottom: 28px;
@@ -265,6 +313,9 @@ header {
     letter-spacing: 12px;
     text-transform: uppercase;
     text-align: center;
+    @media screen and (max-width: 450px){
+      font-size: 25px !important;
+    }
   }
   p{
     color: white;
@@ -273,28 +324,34 @@ header {
     letter-spacing: 6px;
     text-transform: uppercase;
     text-align: center;
+    @media screen and (max-width: 450px){
+      font-size: 10px !important;
+    }
   }
   .numbers_item_1, .numbers_item_2, .numbers_item_3, .numbers_item_4{
     &:hover{
       transform: scale(1.05);
       transition: 0.5s;
       span{
-        color: #77e156;
+        color: #fde52c;
       }
       p{
-        color: #77e156;
+        color: #fde52c;
       }
     }
   }
 }
 .we_best {
-  padding: 100px 15px;
+  padding: 100px 0;
+  @media screen and (max-width: 800px){
+    padding: 50px 0;
+  }
   .video {
-    height: 325px;
     background-color: #002e5b;
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     iframe{
       z-index: 2;
     }
@@ -307,6 +364,8 @@ header {
       right: 50%;
       margin-right: -135px;
       background-color: #fde52c;
+      @media screen and (max-width: 764px){
+        display: none;}
     }
     }
   .best_consulting_r_b{
@@ -356,9 +415,12 @@ header {
   }
 .comments{
   background-color: #002e5b;
-  padding: 175px 15px 100px;
+  padding: 175px 0 100px;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 800px){
+    padding: 125px 0 50px;
+  }
   p{
     font-size: 20px;
     line-height: 40px;
@@ -367,6 +429,10 @@ header {
     margin-bottom: 64px;
     max-width: 920px;
     padding: 15px;
+    @media screen and (max-width: 570px){
+      font-size: 16px;
+      line-height: 22px;
+    }
     &:before{
       display: block;
       content: '"';
@@ -382,5 +448,157 @@ header {
     max-width: 920px;
     text-transform: uppercase;
     color: white;
+    &:before{
+      content: "";
+      height: 2px;
+      width: 22px;
+      background-color: white;
+      display: block;
+      position: relative;
+      left: 50%;
+      margin-left: -100px;
+      top: 50%;
+      margin-bottom: 1px;
+    }
+    &:after{
+      content: "";
+      height: 2px;
+      width: 22px;
+      background-color: white;
+      display: block;
+      position: relative;
+      left: 50%;
+      margin-left: 80px;
+      bottom: 50%;
+      margin-top: 1px;
+    }
+    @media screen and (max-width: 800px){
+      &:before{
+        content: "";
+        height: 0;
+      }
+      &:after{
+        content: "";
+        height: 0;
+      }
+    }
   }
 }
+.contact_block{
+  padding: 100px 0;
+  @media screen and (max-width: 800px){
+    padding: 50px 0;
+  }
+  h2{
+    text-transform: uppercase;
+    font-size: 31px;
+    color: #002e5b;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 26px;
+  }
+  p{
+    text-align: center;
+    font-size: 21px;
+    color: #666666;
+    line-height: 27px;
+    display: block;
+    margin-bottom: 46px;
+  }
+  iframe{
+    margin-bottom: 40px;
+  }
+  .contact_links{
+      border: 2px #fbfbfb solid;
+      margin: 0;
+    h3{
+      text-transform: uppercase;
+      color: #002e5b;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    i{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-size: 18px;
+      color: #002e5b;
+      margin-bottom: 20px;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-size: 16px;
+      text-decoration: none;
+      color: #002e5b;
+      margin-bottom: 20px;
+    }
+
+    .contact{
+      &:hover{
+      a, i{
+        color: #e81018;
+        transition: 0.5s;
+      }}
+    }
+  }
+}
+footer{
+  padding: 30px 0;
+  background-color: #002e5b;
+  a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+    span{
+      color: #fde52c;
+      font-size: 16px;
+    }
+  }
+.social_block {
+  display: flex;
+  align-items: center;
+  a {
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;}
+}
+  .FB{
+    &:hover{
+      color: #3b5998;
+    }
+  }
+  .TW{
+    &:hover{
+      color: #00acee;
+    }
+  }
+  .Goog{
+    &:hover{
+      color: red;
+    }
+  }
+  .Inst{
+    color:  #3f729b;
+  }
+}
+h2{
+  @media screen and (max-width: 450px){
+    font-size: 20px !important;
+}}
+h3{
+  @media screen and (max-width: 450px){
+    font-size: 16px !important;
+  }}
+
+
+
+
+
+
