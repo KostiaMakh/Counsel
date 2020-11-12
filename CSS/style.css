@@ -50,7 +50,40 @@ header {
   position: relative;
   height: 100vh;
   z-index: 1;
-  background-image: url("../Images/main_bg.jpg"); }
+  background-image: url("../Images/main_bg.jpg");
+  background-size: auto 100%; }
+  .first_screen .caruselPosition {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3 !important; }
+  .first_screen .carousel {
+    position: relative;
+    width: 100%; }
+    .first_screen .carousel h2 {
+      color: #fde52c;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      width: 100% !important; }
+    .first_screen .carousel p {
+      color: white;
+      font-size: 14px;
+      line-height: 16px;
+      font-style: italic; }
+    .first_screen .carousel .carousel-control-prev {
+      position: absolute;
+      left: 0; }
+    .first_screen .carousel .carousel-control-next {
+      position: absolute;
+      right: 0; }
+    .first_screen .carousel .carousel-item {
+      text-align: center;
+      align-content: center; }
+    .first_screen .carousel .carousel-indicators {
+      position: absolute;
+      bottom: -70px; }
 
 .second_screen {
   position: relative; }

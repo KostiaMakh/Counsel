@@ -65,7 +65,52 @@ header {
   position: relative;
   height: 100vh;
   z-index: 1;
-  background-image: url("../Images/main_bg.jpg");}
+  background-image: url("../Images/main_bg.jpg");
+  background-size: auto 100%;
+  .caruselPosition{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3 !important;
+  }
+  .carousel{
+    position: relative;
+    width: 100%;
+    h2{
+      color: #fde52c;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      width: 100% !important;
+    }
+    p{
+      color: white;
+      font-size: 14px;
+      line-height: 16px;
+      font-style: italic;
+
+    }
+    .carousel-control-prev{
+      position: absolute;
+      left: 0;
+    }
+    .carousel-control-next{
+      position: absolute;
+      right: 0;
+    }
+    .carousel-item{
+      text-align: center;
+      align-content: center;
+    }
+    .carousel-indicators{
+      position: absolute;
+      bottom: -70px;
+
+
+    }
+  }
+}
 .second_screen{
   position: relative;
   .item{
