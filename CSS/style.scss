@@ -89,7 +89,12 @@ header {
       font-size: 14px;
       line-height: 16px;
       font-style: italic;
-
+      padding-left: 200px;
+      padding-right: 200px;
+      @media screen and (max-width: 570px){
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
     .carousel-control-prev{
       position: absolute;
